@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Translator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 Language Translator</h1>
+    <p class="subtitle">Translate words and sentences easily</p>
+
+    <div class="language-row">
+      <select id="fromLanguage" aria-label="Translate from">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="mr">Marathi</option>
+        <option value="fr">French</option>
+        <option value="es">Spanish</option>
+        <option value="de">German</option>
+        <option value="ja">Japanese</option>
+      </select>
+
+      <button id="swapBtn" class="swap" title="Swap languages">⇄</button>
+
+      <select id="toLanguage" aria-label="Translate to">
+        <option value="hi">Hindi</option>
+        <option value="en">English</option>
+        <option value="mr">Marathi</option>
+        <option value="fr">French</option>
+        <option value="es">Spanish</option>
+        <option value="de">German</option>
+        <option value="ja">Japanese</option>
+      </select>
+    </div>
+
+    <div class="text-area">
+      <textarea id="inputText"
+        placeholder="Enter text to translate..."></textarea>
+
+      <textarea id="outputText"
+        placeholder="Translation will appear here..."
+        readonly></textarea>
+    </div>
+
+    <p id="status" role="status"></p>
+
+    <div class="buttons">
+      <button id="translateBtn" class="primary">
+        Translate
+      </button>
+      <button id="copyBtn" class="secondary">
+        Copy Translation
+      </button>
+      <button id="clearBtn" class="secondary">
+        Clear
+      </button>
+    </div>
+
+    <footer>Simple Language Translator | HTML, CSS & JavaScript</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
